@@ -1,0 +1,22 @@
+-coding rules !
+-Max 10 lines of code per function
+-test coverage -> 65%
+-storage: x(w)-y(l)-z(h)
+- ADD type of package(Toys,Furniture,...etc)
+- just and only one lift, lift cant lift only one from top
+-eachpackage might have
+  =description
+  =count of moves
+  =added date
+  =#
+  =priority(!) (1-5)
+
+-Package with lover priority cannot be put over package with higher priority
+
+IMPLEMENT:
+  -getPackageByNumber(#)
+  -getAllPackagesByType(Type)
+  -getHistoryOfPreviousMoves()
+  -getStatusOfStorage()
+
+dlaczego singleton oparty o enum jest lepszy niz ten co mielismy na zajeciach
