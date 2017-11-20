@@ -20,7 +20,7 @@ public class CubeStorage {
         for (int i = 0; i < howMany; i++) {
             Package pack = generatePackage(){
             getRandomPlace().add();
-            
+
         }
 
     }
