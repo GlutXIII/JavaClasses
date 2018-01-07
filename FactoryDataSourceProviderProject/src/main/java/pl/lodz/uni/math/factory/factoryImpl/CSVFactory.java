@@ -3,9 +3,12 @@ package pl.lodz.uni.math.factory.factoryImpl;
 import pl.lodz.uni.math.POJO.Person;
 import pl.lodz.uni.math.factory.Factory;
 
+import java.util.Date;
+
 public class CSVFactory implements Factory {
     @Override
     public String getName() {
+        new Date()
         return null;
     }
 
