@@ -1,23 +1,19 @@
 package pl.lodz.uni.math;
 
-import pl.lodz.uni.math.POJO.Person;
-import pl.lodz.uni.math.factory.DAOFactoryProvider;
+import pl.lodz.uni.math.factory.Factory;
+import pl.lodz.uni.math.factory.Provider.DaoFactoryProvider;
 import pl.lodz.uni.math.factory.enums.FactoryEnum;
-import pl.lodz.uni.math.factory.transformer.FactoryDataToUserTransformer;
-
-
-import static pl.lodz.uni.math.factory.enums.FactoryEnum.getFactory;
 
 public class Main {
 
     public static void main(String[] args) {
-        DAOFactoryProvider daoFactoryProvider = new DAOFactoryProvider();
-        daoFactoryProvider.setInstance(getFactory(FactoryEnum.CSV));
-        System.out.println(daoFactoryProvider.getName());
-        daoFactoryProvider.setInstance(getFactory(FactoryEnum.WSF));
-        System.out.println(daoFactoryProvider.getName());
-        FactoryDataToUserTransformer factoryDataToUserTransformer = new FactoryDataToUserTransformer();
+        DaoFactoryProvider.INSTANCE.setSourceOfData(FactoryEnum.CSV);
+
+         System.out.println(DaoFactoryProvider.INSTANCE.getService().getName());
+        DaoFactoryProvider.INSTANCE.setSourceOfData(FactoryEnum.DBF);
+      System.out.println(DaoFactoryProvider.INSTANCE.getService().getName());
+      /*  FactoryDataToUserTransformer factoryDataToUserTransformer = new FactoryDataToUserTransformer();
         Person person = factoryDataToUserTransformer.populate(daoFactoryProvider);
-        System.out.println("Imie: " + person.getName() + " Wiek: "+ person.getAge());
+        System.out.println("Imie: " + person.getName() + " Wiek: "+ person.getAge());*/
     }
 }
