@@ -21,25 +21,30 @@
     </build>
     <dependencies>
     <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
-    <dependency>
+<!--    <dependency>
         <groupId>org.powermock</groupId>
         <artifactId>powermock-module-junit4</artifactId>
         <version>1.6.5</version>
         <scope>test</scope>
+    </dependency>-->
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-all</artifactId>
+        <version>1.9.5</version>
+        <scope>test</scope>
     </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>2.0.0-beta</version>
-            <scope>test</scope>
-        </dependency>
-
 
     <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>2.7.22</version>
     </dependency>
+<!--    <dependency>
+        <groupId>org.easymock</groupId>
+        <artifactId>easymock</artifactId>
+        <version>3.5.1</version>
+        <scope>test</scope>
+    </dependency>-->
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
