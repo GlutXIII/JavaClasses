@@ -15,10 +15,10 @@ import static org.mockito.MockitoAnnotations.initMocks;
 public class FactoryDataToUserTransformerTest {
 
     @InjectMocks
-    FactoryDataToUserTransformer factoryDataToUserTransformer = new FactoryDataToUserTransformer();
+    private FactoryDataToUserTransformer factoryDataToUserTransformer = new FactoryDataToUserTransformer();
 
     @Mock
-    CSVFactory csvFactory;
+    private CSVFactory csvFactory;
 
     @Before
     public void setUp(){
